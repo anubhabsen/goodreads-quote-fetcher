@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(231, 231, 219);
+    color: rgb(59, 43, 20);
+}
+.center .center-about .center-quote{
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.center-about {
+    font-size: 1em;
+}
+
+.center-quote {
+    font-size: 2em;
+}

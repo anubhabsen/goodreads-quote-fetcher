@@ -7,15 +7,17 @@
 <head>
   <meta charset="utf-8">
   <title>Quote of the day</title>
-  <meta name="Anubhab Sen">
+  <meta name="author" content="Anubhab Sen">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
 <body>
-	<div style="text-align: center;">
+	<div class="center">
 		<img src="images/goodreads.jpg">
 		<h1>Quote of the day</h1>
 	</div>
 	<br>
-	<div style="text-align: center;">
+	<div class="center-quote">
 		<?php
 		$res = get_curl("https://www.goodreads.com/quotes_of_the_day");
 		$start = strpos($res, '<div class=\'quote\'>');
@@ -27,7 +29,7 @@
 		?>
 	</div>
 	<br><br><br>
-	<div style="text-align: center;">
+	<div class="center-about">
 		<?php
 		$res = get_curl("https://www.goodreads.com/quotes_of_the_day");
 		$start = strpos($res, 'About this quote');
