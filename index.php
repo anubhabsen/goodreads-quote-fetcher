@@ -27,7 +27,7 @@
 		$res=str_replace("href=", "",$res);
 		echo ($res);
 		?>
-	</div>
+	</div></div></div>
 	<br><br><br>
 	<div class="center-about">
 		<?php
