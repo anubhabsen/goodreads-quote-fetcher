@@ -25,7 +25,7 @@
 		$length = $end-$start;
 		$res = substr($res, $start, $length);
 		$res=str_replace("href=", "",$res);
-		echo ($res);
+		echo stripslashes(mb_convert_encoding($res,"HTML-ENTITIES", "UTF-8"));
 		?>
 	</div></div></div>
 	<br><br><br>
@@ -37,7 +37,7 @@
 		$length = $end-$start;
 		$res = substr($res, $start, $length);
 		$res=str_replace("href=", "",$res);
-		echo ($res);
+		echo stripslashes(mb_convert_encoding($res,"HTML-ENTITIES", "UTF-8"));
 		?>
 	</div>
 </body>
